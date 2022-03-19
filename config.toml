@@ -22,7 +22,6 @@ theme = "hugo-bootstrap-5"
 
 [languages]
 [languages.ja]
-  baseURL = "https://my-b5.kora.win/"
   languageName = "日本語"
   languageCode = "ja"
   # contentDir = "content/ja"
@@ -49,7 +48,6 @@ theme = "hugo-bootstrap-5"
     weight = 4
 
 [languages.en]
-  baseURL = "https://my-b5.kora.win/en/"
   languageName = "English"
   languageCode = "en"
   # contentDir = "content/en"
