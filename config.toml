@@ -1,6 +1,6 @@
 baseurl = "https://my-b5.kora.win/"
 title = "My-B5 Bootstrap demo"
-languageCode = "ja"
+# languageCode = "ja"
 
 hasCJKLanguage = true
 defaultContentLanguageInSubdir = true
