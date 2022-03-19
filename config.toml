@@ -1,3 +1,63 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "https://example.com/"
+title = "My-B5 Bootstrap demo"
+languageCode = "en-us"
+defaultContentLanguage = "ja"
+
+# Pagination
+paginate = 3
+paginatePath = "page"
+
+# Theme to use
+theme = "hugo-bootstrap-5"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Google analytics
+# googleAnalytics = ""
+
+[languages]
+[languages.ja]
+  baseURL = "https://kora.win/"
+  title = "コラウィン"
+  dateFormat = "2006年01月02日"
+
+  languageName = "日本"
+
+  [[languages.ja.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+  [[languages.ja.menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+  [[languages.ja.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3
+
+[languages.en]
+  baseURL = "https://kora.win/en"
+  title = "KoraWin"
+  dateFormat = "2006-01-02"
+  
+  languageName = "English"
+
+  # Replace the default footer message with a localized message
+  # copyright = "Hugo template made with 笶､ by Xzya"
+
+  [[languages.en.menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/contact/"
+    name = "Contact"
+    weight = 3
+
