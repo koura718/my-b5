@@ -1,4 +1,4 @@
-baseurl = "https://kora.win/"
+baseurl = "https://my-b5.kora.win/"
 title = "My-B5 Bootstrap demo"
 languageCode = "ja"
 
@@ -22,7 +22,7 @@ theme = "hugo-bootstrap-5"
 
 [languages]
 [languages.ja]
-  baseURL = "https://kora.win/"
+  baseURL = "https://my-b5.kora.win/"
   languageName = "日本語"
   languageCode = "ja"
   # contentDir = "content/ja"
@@ -49,7 +49,7 @@ theme = "hugo-bootstrap-5"
     weight = 4
 
 [languages.en]
-  baseURL = "https://kora.win/en/"
+  baseURL = "https://my-b5.kora.win/en/"
   languageName = "English"
   languageCode = "en"
   # contentDir = "content/en"
