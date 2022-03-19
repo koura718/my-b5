@@ -1,0 +1,29 @@
+- id: by
+  translation: "by"
+
+- id: tags
+  translation: "タグ"
+
+- id: categories
+  translation: "カテゴリ"
+
+- id: readMore
+  translation: " 続きを読む →"
+
+- id: translations
+  translation: "翻訳"
+
+- id: related
+  translation: "関連情報"
+
+- id: recentPosts
+  translation: "最新記事"
+
+- id: backToTop
+  translation: "戻る"
+
+- id: language
+  translation: "言語"
+
+- id: thanks
+  translation: "Hugo template made with ❤ by {{.Xzya}}, inspired by {{.HugoThemeBootstrap4Blog}}"

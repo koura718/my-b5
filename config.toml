@@ -1,6 +1,9 @@
-baseurl = "https://example.com/"
+baseurl = "https://kora.win/"
 title = "My-B5 Bootstrap demo"
-languageCode = "en-us"
+languageCode = "ja"
+
+hasCJKLanguage = true
+defaultContentLanguageInSubdir = true
 defaultContentLanguage = "ja"
 
 # Pagination
@@ -20,10 +23,13 @@ theme = "hugo-bootstrap-5"
 [languages]
 [languages.ja]
   baseURL = "https://kora.win/"
+  languageName = "日本語"
+  languageCode = "ja"
+  # contentDir = "content/ja"
+  weight = 1
+
   title = "コラウィン"
   dateFormat = "2006年01月02日"
-
-  languageName = "日本"
 
   [[languages.ja.menu.main]]
     url = "/"
@@ -37,27 +43,33 @@ theme = "hugo-bootstrap-5"
     url = "/contact/"
     name = "Contact"
     weight = 3
+  [[languages.ja.menu.main]]
+    url = "/post/"
+    name = "post"
+    weight = 4
 
 [languages.en]
-  baseURL = "https://kora.win/en"
+  baseURL = "https://kora.win/en/"
+  languageName = "English"
+  languageCode = "en"
+  # contentDir = "content/en"
+  weight = 2
+
   title = "KoraWin"
   dateFormat = "2006-01-02"
-  
-  languageName = "English"
 
   # Replace the default footer message with a localized message
   # copyright = "Hugo template made with 笶､ by Xzya"
 
   [[languages.en.menu.main]]
-    url = "/"
+    url = "../"
     name = "Home"
     weight = 1
   [[languages.en.menu.main]]
-    url = "/about/"
+    url = "../about/"
     name = "About"
     weight = 2
   [[languages.en.menu.main]]
-    url = "/contact/"
+    url = "../contact/"
     name = "Contact"
     weight = 3
-
