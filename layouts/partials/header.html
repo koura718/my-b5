@@ -1,4 +1,4 @@
-{{ $colorScheme := default "light" .Site.Params.header.colorScheme }}
+{{ $colorScheme := default "info" .Site.Params.header.colorScheme }}
 
 <header class="blog-header">
     <nav class="navbar navbar-expand-md navbar-{{ $colorScheme }} bg-{{ $colorScheme }}">
@@ -19,7 +19,7 @@
                             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                         {{ else }}
                             {{ $menuUrl := .URL | relLangURL }}
-                            <a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}">{{ .Name }}</a>
+                            <a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}"><i class="fa-solid fa-caret-right"></i> {{ .Name }}</a>
                         {{ end }}
                     </li>
                     {{ end }}

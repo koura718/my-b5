@@ -1,0 +1,17 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+// myfontawasome.scss
+// svgs
+$fa-font-path: "../fontawesome/webfonts";
+@import "../Font-Awesome/scss/fontawesome.scss";
+@import "../Font-Awesome/scss/solid.scss";
+@import "../Font-Awesome/scss/brands.scss";
+@import "../Font-Awesome/scss/regular.scss";
+@import "../Font-Awesome/scss/v4-shims.scss";

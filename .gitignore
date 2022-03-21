@@ -105,7 +105,10 @@ dist
 
 # HUGO
 public/
-resources/
+resources/_gen/
+assets/jsconfig.json
+hugo_stats.json
+
 # Local Netlify folder
 .netlify/
 TODO

@@ -27,24 +27,24 @@ theme = "hugo-bootstrap-5"
   # contentDir = "content/ja"
   weight = 1
 
-  title = "コラウィン"
+  title = "水城卓球スクール"
   dateFormat = "2006年01月02日"
 
   [[languages.ja.menu.main]]
     url = "/ja/"
-    name = "Home"
+    name = "ホーム"
     weight = 1
   [[languages.ja.menu.main]]
     url = "/ja/about/"
-    name = "About"
+    name = "ご案内"
     weight = 2
   [[languages.ja.menu.main]]
     url = "/ja/contact/"
-    name = "Contact"
+    name = "お問合せ"
     weight = 3
   [[languages.ja.menu.main]]
     url = "/ja/post/"
-    name = "post"
+    name = "活動報告"
     weight = 4
 
 [languages.en]

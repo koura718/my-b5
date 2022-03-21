@@ -19,8 +19,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    
+
     <link href='{{ "css/style.css" | relURL }}' rel="stylesheet">
+    <link href='{{ "css/custom.css" | relURL }}' rel="stylesheet">
 
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
