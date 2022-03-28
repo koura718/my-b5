@@ -30,37 +30,37 @@ theme = "hugo-bootstrap-5"
   dateFormat = "2006年01月02日"
 
   [[languages.ja.menu.main]]
-    url = "/"
+    url = "/ja/"
     pre = '<i class="fa-solid fa-house"></i>'
     name = "ホーム"
     weight = 1
   [[languages.ja.menu.main]]
-    url = "/school/"
+    url = "/ja/school/"
     pre = '<i class="fa-solid fa-school"></i>'
     name = "教室紹介"
     weight = 2
   [[languages.ja.menu.main]]
-    url = "/stuff/"
+    url = "/ja/stuff/"
     pre = '<i class="fa-solid fa-user-tie"></i>'
     name = "スタッフ"
     weight = 3
   [[languages.ja.menu.main]]
-    url = "/schedule/"
+    url = "/ja/schedule/"
     pre = '<i class="fa-solid fa-calendar-days"></i>'
     name = "スケジュール"
     weight = 4
   [[languages.ja.menu.main]]
-    url = "/post/"
+    url = "/ja/post/"
     pre = '<i class="fa-solid fa-person-running"></i>'
     name = "活動報告"
     weight = 5
   [[languages.ja.menu.main]]
-    url = "/access/"
+    url = "/ja/access/"
     pre = '<i class="fa-solid fa-location-dot"></i>'
     name = "アクセス"
     weight = 6
   [[languages.ja.menu.main]]
-    url = "/contact/"
+    url = "/ja/contact/"
     pre = '<i class="fa-solid fa-square-phone-flip"></i>'
     name = "お問合せ"
     weight = 7
