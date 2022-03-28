@@ -1,6 +1,5 @@
 baseurl = "https://my-b5.kora.win/"
-title = "My-B5 Bootstrap demo"
-# languageCode = "ja"
+languageCode = "ja"
 
 hasCJKLanguage = true
 defaultContentLanguageInSubdir = true
@@ -65,3 +64,24 @@ theme = "hugo-bootstrap-5"
     pre = '<i class="fa-solid fa-square-phone-flip"></i>'
     name = "お問合せ"
     weight = 7
+
+[languages.en]
+  languageName = "English"
+  languageCode = "en"
+  # contentDir = "content/en"
+  weight = 51
+
+  title = "Mizuki Table Tennis School"
+  dateFormat = "2006-01-02"
+
+  # Replace the default footer message with a localized message
+  # copyright = "Hugo template made with 笶､ by Xzya"
+
+  [[languages.en.menu.main]]
+    url = "/en/"
+    name = "Home"
+    weight = 52
+  [[languages.en.menu.main]]
+    url = "/en/about/"
+    name = "About"
+    weight = 53
