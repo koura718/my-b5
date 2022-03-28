@@ -31,43 +31,37 @@ theme = "hugo-bootstrap-5"
   dateFormat = "2006年01月02日"
 
   [[languages.ja.menu.main]]
-    url = "/ja/"
+    url = "/"
+    pre = '<i class="fa-solid fa-house"></i>'
     name = "ホーム"
     weight = 1
   [[languages.ja.menu.main]]
-    url = "/ja/about/"
-    name = "ご案内"
+    url = "/school/"
+    pre = '<i class="fa-solid fa-school"></i>'
+    name = "教室紹介"
     weight = 2
   [[languages.ja.menu.main]]
-    url = "/ja/contact/"
-    name = "お問合せ"
+    url = "/stuff/"
+    pre = '<i class="fa-solid fa-user-tie"></i>'
+    name = "スタッフ"
     weight = 3
   [[languages.ja.menu.main]]
-    url = "/ja/post/"
-    name = "活動報告"
+    url = "/schedule/"
+    pre = '<i class="fa-solid fa-calendar-days"></i>'
+    name = "スケジュール"
     weight = 4
-
-[languages.en]
-  languageName = "English"
-  languageCode = "en"
-  # contentDir = "content/en"
-  weight = 2
-
-  title = "KoraWin"
-  dateFormat = "2006-01-02"
-
-  # Replace the default footer message with a localized message
-  # copyright = "Hugo template made with 笶､ by Xzya"
-
-  [[languages.en.menu.main]]
-    url = "/en/"
-    name = "Home"
-    weight = 1
-  [[languages.en.menu.main]]
-    url = "/en/about/"
-    name = "About"
-    weight = 2
-  [[languages.en.menu.main]]
-    url = "/en/contact/"
-    name = "Contact"
-    weight = 3
+  [[languages.ja.menu.main]]
+    url = "/post/"
+    pre = '<i class="fa-solid fa-person-running"></i>'
+    name = "活動報告"
+    weight = 5
+  [[languages.ja.menu.main]]
+    url = "/access/"
+    pre = '<i class="fa-solid fa-location-dot"></i>'
+    name = "アクセス"
+    weight = 6
+  [[languages.ja.menu.main]]
+    url = "/contact/"
+    pre = '<i class="fa-solid fa-square-phone-flip"></i>'
+    name = "お問合せ"
+    weight = 7

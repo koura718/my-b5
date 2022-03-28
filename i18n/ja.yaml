@@ -16,6 +16,9 @@
 - id: related
   translation: "関連情報"
 
+- id: post
+  translation: "記事"
+
 - id: recentPosts
   translation: "最新記事"
 
@@ -26,4 +29,10 @@
   translation: "言語"
 
 - id: thanks
-  translation: "Hugo template made with ❤ by {{.Xzya}}, inspired by {{.HugoThemeBootstrap4Blog}}"
+  translation: '水城卓球スクール'
+
+- id: recentBlogs
+  translation: "最新の活動"
+
+- id: blog
+  translation: "活動実績"

@@ -1,0 +1,73 @@
+baseurl = "https://my-b5.kora.win/"
+title = "My-B5 Bootstrap demo"
+# languageCode = "ja"
+
+hasCJKLanguage = true
+defaultContentLanguageInSubdir = true
+defaultContentLanguage = "ja"
+
+# Pagination
+paginate = 3
+paginatePath = "page"
+
+# Theme to use
+theme = "hugo-bootstrap-5"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# Google analytics
+# googleAnalytics = ""
+
+[languages]
+[languages.ja]
+  languageName = "日本語"
+  languageCode = "ja"
+  # contentDir = "content/ja"
+  weight = 1
+
+  title = "水城卓球スクール"
+  dateFormat = "2006年01月02日"
+
+  [[languages.ja.menu.main]]
+    url = "/ja/"
+    name = "ホーム"
+    weight = 1
+  [[languages.ja.menu.main]]
+    url = "/ja/about/"
+    name = "ご案内"
+    weight = 2
+  [[languages.ja.menu.main]]
+    url = "/ja/contact/"
+    name = "お問合せ"
+    weight = 3
+  [[languages.ja.menu.main]]
+    url = "/ja/post/"
+    name = "活動報告"
+    weight = 4
+
+[languages.en]
+  languageName = "English"
+  languageCode = "en"
+  # contentDir = "content/en"
+  weight = 2
+
+  title = "KoraWin"
+  dateFormat = "2006-01-02"
+
+  # Replace the default footer message with a localized message
+  # copyright = "Hugo template made with 笶､ by Xzya"
+
+  [[languages.en.menu.main]]
+    url = "/en/"
+    name = "Home"
+    weight = 1
+  [[languages.en.menu.main]]
+    url = "/en/about/"
+    name = "About"
+    weight = 2
+  [[languages.en.menu.main]]
+    url = "/en/contact/"
+    name = "Contact"
+    weight = 3

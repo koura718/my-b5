@@ -22,6 +22,9 @@
 
     <link href='{{ "css/style.css" | relURL }}' rel="stylesheet">
     <link href='{{ "css/custom.css" | relURL }}' rel="stylesheet">
+    <link href='{{ "css/jpn.css" | relURL }}' rel="stylesheet">
+    <!-- link href='{{ "css/navbar.css" | relURL }}' rel="stylesheet" -->
+    <!-- link rel="stylesheet" href="https://unpkg.com/jpncss@latest/dist/bootstrap/jpn.min.css" -->
 
     {{ range .AlternativeOutputFormats -}}
     <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">

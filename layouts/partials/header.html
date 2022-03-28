@@ -19,7 +19,7 @@
                             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                         {{ else }}
                             {{ $menuUrl := .URL | relLangURL }}
-                            <a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}"><i class="fa-solid fa-caret-right"></i> {{ .Name }}</a>
+                            <a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}"><span style="font-size: small;display: inline-block;white-space: nowrap;font-weight:bold;">{{ .Pre }} {{ .Name }}</span></a>
                         {{ end }}
                     </li>
                     {{ end }}
