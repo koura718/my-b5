@@ -32,7 +32,7 @@
                             {{ i18n "language" }}
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                            {{ range .Site.Home.AllTranslations }}
+                            {{ range .AllTranslations }}
                                 <li><a class="dropdown-item" href="{{ .Permalink }}">{{ .Language.LanguageName }}</a></li>
                             {{ end }}
                         </ul>

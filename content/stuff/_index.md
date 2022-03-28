@@ -1,7 +1,7 @@
 ---
 title: "スタッフ紹介"
 date: 2022-03-28T12:15:51+09:00
-draft: true
+draft: false
 categories: ["", ""]
 description: ""
 image: ""
@@ -10,4 +10,3 @@ author: "水城卓球スクール"
 ---
 
 ## スタッフ紹介
-
