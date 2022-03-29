@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "水城卓球スクール"
 date: 2022-03-28T12:18:41+09:00
 draft: false
 categories: ["", ""]
