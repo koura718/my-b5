@@ -1,25 +1,37 @@
 {{ $colorScheme := default "info" .Site.Params.header.colorScheme }}
 
-<header class="blog-header">
-    <nav class="navbar navbar-expand-md navbar-{{ $colorScheme }} bg-{{ $colorScheme }}">
-        <div class="container-fluid">
+<!-- header class="blog-header" -->
+<header class="navbar-light navbar-sticky header-static">
+    <!-- nav class="navbar navbar-expand-md navbar-{{ $colorScheme }} bg-{{ $colorScheme }}" -->
+    <nav class="navbar navbar-expand-md navbar-{{ $colorScheme }}" style="background-color: rgba(255, 255, 255, 0.0);">
+        <!-- div class="container-fluid" -->
+        <div class="container">
             <a class="navbar-brand" href="{{ .Site.BaseURL | relLangURL }}">
                 {{ partial "brand" . }}
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-                <ul class="navbar-nav">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav navbar-nav-scroll ms-auto">
                     {{ $url := .RelPermalink | relLangURL }}
                     {{ range .Site.Menus.main }}
-                    <li class="nav-item">
-                        {{ if eq (hasPrefix .URL "mailto:") true }}
+                    <li class="nav-item dropdown">
+                        {{ if in .URL "school" }}
+                            <!-- a class="nav-link" href="{{ .URL }}">{{ .Name }}</a -->
+                            <a class="nav-link dropdown-toggle" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
+                            <ul class="dropdown-menu" aria-labelledby="homeMenu">
+                                <li> <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a></li>
+                                <li> <a class="dropdown-item" href="{{ .URL }}#nomal">大人教室</a></li>
+                                <li> <a class="dropdown-item" href="{{ .URL }}#junior">ジュニア教室</a></li>
+                                <li> <a class="dropdown-item" href="{{ .URL }}#personal">個人レッスン</a></li>
+                                <li> <a class="dropdown-item" href="{{ .URL }}#daigashi">台貸し</a></li>
+                            </ul>
+                        {{ else if eq (hasPrefix .URL "mailto:") true }}
                             <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                         {{ else }}
                             {{ $menuUrl := .URL | relLangURL }}
-                            <a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}"><span style="font-size: small;display: inline-block;white-space: nowrap;font-weight:bold;">{{ .Pre }} {{ .Name }}</span></a>
+                            <span style="font-size: small;display: inline-block;white-space: nowrap;"><a class="nav-link {{ if eq $url $menuUrl }}active{{end}}" href="{{ $menuUrl }}">{{ .Pre }} {{ .Name }}</a></span>
                         {{ end }}
                     </li>
                     {{ end }}
